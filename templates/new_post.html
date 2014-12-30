@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="/static/bootstrap.min.css">
+		<link rel="stylesheet" href="/static/main.css">
+		<title>New Post</title>
+	</head>
+	<body>
+		<div class= "container">
+			<div class="row">
+				<div class = "title">
+				<a href = "/blog"> 
+					<h1 id = "mainTitle"> Blog </h1>
+				</a>
+				</div>
+			</div>
+
+			<div class="row">
+				<h4> add a new post! </h4>
+			</div>
+
+			<div class="container">
+				<form method="post">
+					<div class="row">
+						<label>
+							<h5>subject</h5>
+							<input type="text" name="subject" value="{{subject}}">
+						</label>
+					</div>
+					
+					<div class="row">
+						<label>
+							<h5>blog</h5>
+							<textarea name="content" class = "text">{{content}}</textarea>
+						</label>
+					</div>
+					
+					<div class="row">
+						<div class ="error">{{error}}</div>
+					</div>
+
+					<div class="row">
+						<input type="submit">
+					</div>
+
+				</form>
+			</div>
+			
+		</div>
+	</body>
+</html>

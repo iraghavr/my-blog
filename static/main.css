@@ -1,0 +1,27 @@
+.date{
+	text-align: right;
+	color: #fab57f;
+	line-height: 5em;
+}
+
+.entry-head{
+	border-bottom: 2px solid #737373;
+	margin-bottom: 8px; 
+}
+
+.error{
+	color: #8b0000
+}
+
+.text{
+	width: 300%;
+	height: 300px
+}
+
+h5{
+	color: #00008B
+}
+
+.subject-post{
+
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="/static/bootstrap.min.css">
+		<link rel="stylesheet" href="/static/main.css">
+		<title> Post page </title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<a href = "/blog"> 
+				<h1 id = "mainTitle"> BLOG LISTING </h1>
+				</a>
+			</div>	
+
+			<div class=" row">
+				<a href= "/blog/newpost"> add new post! </a>
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<div class = "entry">
+						<div class="col-md-6">
+							<div class = "subject-post">
+								<h2>{{post.subject}}<h2>
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="date">
+									{{post.created.strftime("%b %d, %Y @ %I:%M:%S %p")}}
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class ="content">
+						<pre>{{post.content}}</pre>
+					</div>
+				</div>		
+			</div>		
+		</div>	
+	</body>
+</html>
